@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task_4</title>
+    <title>Task_5.2</title>
 </head>
 <body>
     <div class="container">
-        <div class="cards">
-            <!--<div class="img"><div class="shadow"></div></div>-->
-            <div class="img_container"><img src="img/visa_straight_64px.png" class="img visa"><div class="shadow"></div></div>
-            <div class="img_container"><img src="img/mastercard_straight.png" class="img master"><div class="shadow"></div></div>
-            <div class="img_container"><img src="img/american_express_curved.png" class="img amer_ex"><div class="shadow"></div></div>
-            <div class="img_container"><img src="img/discover_straight_64px.png" class="img discover"><div class="shadow"></div></div>
-            <div class="img_container"><img src="img/jcb.png" class="img jcb"><div class="shadow"></div></div>
-            <div class="img_container"><img src="img/mir.png" class="img mir"><div class="shadow"></div></div>
-            <div class="img_container"><img src="img/maestro_straight_64px.png" class="img maestro"><div class="shadow"></div></div>
-            <div class="img_container"><img src="img/dinersclub.png" class="img diners"><div class="shadow"></div></div>
+        <header class="header">
+            <h2>Товары</h2>
+            <button type="button" class="btn-add" data-btn="add-btn">+</button>
+        </header>
+        <div class="widget hidden" data-widget="widget">
+            <form id="add-item" class="widget-menu" data-menu="add-menu" novalidate>
+                <h3 class="name-title">Название</h3>
+                <input name="input-add-name" class="input" type="text" required data-field="name">
+                <h3 class="price-title">Стоимость</h3>
+                <input name="input-add-price" class="input" type="text" required data-field="price">
+                <div class="btn-container">
+                    <button form="add-item" data-btn="save-btn" class="save btn">Сохранить</button>
+                    <button data-btn="cancel-btn" class="cancel btn">Отмена</button>
+                </div>
+            </form>
+            <div class="msg hidden" data-msg="msg-err"></div>
+        </div>  
+        <div class="items-title" data-items="title">
+            <p class="grid-title">Название</p>
+            <p class="grid-title">Стоимость</p>
+            <p class="grid-title">Действия</p>
         </div>
-        <form data-widget="card-form-widget" class="form">
-            <label for="card-input">Enter card number</label>
-            <input name="input_card" data-id="card-input" class="input">
-            <button data-id="card-submit" class="button">Click to validate</button>
-        </form>
-        <div class="msg msg_sys hidden">System is not exsist</div>
-        <div class="msg msg_card hidden">Card is not exsist</div>
+        <div class="items-box" data-items="items-container"></div>
     </div>
 </body>
 </html>
