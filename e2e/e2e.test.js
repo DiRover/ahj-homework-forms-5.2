@@ -1,7 +1,7 @@
 import puppetteer from 'puppeteer';
 import { fork } from 'child_process';
 
-jest.setTimeout(30000); // default puppeteer timeout
+jest.setTimeout(40000); // default puppeteer timeout
 
 describe('Check', () => {
   let browser = null;
