@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 export default function buildList(arr, boxItems) {
   boxItems.innerHTML = '';
   arr.forEach((item) => {
