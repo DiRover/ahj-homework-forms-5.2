@@ -42,4 +42,4 @@ describe('Check', () => {
     submit.click();
     await page.waitForSelector('[data-msg="msg-err"].active');
   });
-})
+});

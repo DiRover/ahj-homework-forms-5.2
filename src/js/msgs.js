@@ -1,10 +1,10 @@
 const msgs = {
-    name: {
-        valueMissing: 'Введите название товара',
-    },
-    price: {
-        valueMissing: 'Введите стоимость товара'
-    }
+  name: {
+    valueMissing: 'Введите название товара',
+  },
+  price: {
+    valueMissing: 'Введите стоимость товара',
+  },
 };
 
-export default  msgs;
+export default msgs;

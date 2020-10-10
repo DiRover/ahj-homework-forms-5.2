@@ -1,6 +1,6 @@
 export default class Item {
-    constructor(nameItem, priceItem) {
-        this.nameItem = nameItem;
-        this.priceItem = priceItem;
-    }
+  constructor(nameItem, priceItem) {
+    this.nameItem = nameItem;
+    this.priceItem = priceItem;
+  }
 }
